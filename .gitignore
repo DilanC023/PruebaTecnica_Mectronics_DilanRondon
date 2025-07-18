@@ -1,0 +1,32 @@
+# Visual Studio
+.vs/
+
+#EstudiantesApp.API
+EstudiantesApp.API/EstudiantesApp.API/*.vs/
+EstudiantesApp.API/EstudiantesApp.API/*.user
+EstudiantesApp.API/EstudiantesApp.API/*.suo
+EstudiantesApp.API/EstudiantesApp.API/*.cache
+EstudiantesApp.API/EstudiantesApp.API/bin/
+EstudiantesApp.API/EstudiantesApp.API/obj/
+*.dbmdl
+*.pdb
+
+#EstudiantesApp.Repositorio
+EstudiantesApp.Repositorio/bin/
+EstudiantesApp.Repositorio/obj/
+
+#EstudiantesApp.Servicio
+EstudiantesApp.Servicio/bin/
+EstudiantesApp.Servicio/obj/
+
+#Estudiantes.Pruebas
+Estudiantes.Pruebas/bin/
+Estudiantes.Pruebas/obj/
+
+# Node / React
+EstudiantesApp.Cliente/node_modules
+
+# Sistema
+.DS_Store
+Thumbs.db
+
