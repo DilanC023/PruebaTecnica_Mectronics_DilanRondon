@@ -45,8 +45,10 @@ PruebaTecnica_Mectronics_DilanRondon/
 
 ```bash
 git clone [URL Repositorio]
-cd PruebaTecnica_Mectronics_DilanRondon
+cd EstudiantesApp
 ```
+Modifica el Nombre de la carpeta Base por el nombre de EstudiantesApp
+
 ### 2. Configura la base de datos
 Abre SQL Server Management Studio.
 
@@ -54,15 +56,22 @@ Ejecuta los scripts en la carpeta EstudiantesApp.BD para crear la base de datos,
 
 
 ### 3. Ejecutar BackEnd
+
 ```
 cd EstudiantesApp.API
 dotnet restore
+```
+
+Para el proyecto Estudiantes.Pruebas, se debe pasar manualmente los archivos DLL de los proyectos API, Repositorio y Servicio a la carpeta bin/debug/net8.0 para poder ejecutarlo, estos archivos se encuentran en la carpeta bin de cada proyecto.
+
+```
 dotnet build
 dotnet run
 ```
-Modificar la cadena de conexion del archivo appsettings.json, por la base de datos local del equipo o instancia SQL Server
 
-### 4. Ejecutar FronEnd
+Modificar la cadena de conexion del archivo appsettings.json, por la base de datos local del equipo o instancia SQL Server. 
+
+### 4. Ejecutar FrontEnd
 ```
 cd EstudiantesApp.Cliente
 npm install
