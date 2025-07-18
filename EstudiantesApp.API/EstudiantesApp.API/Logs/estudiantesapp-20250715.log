@@ -1,0 +1,48 @@
+2025-07-15 20:52:38.397 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 110.1382 ms
+2025-07-15 20:52:39.139 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 85.1020 ms
+2025-07-15 21:06:17.165 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 152.4837 ms
+2025-07-15 21:06:17.817 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 107.5538 ms
+2025-07-15 21:08:38.474 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 2.6537 ms
+2025-07-15 21:08:39.215 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 114.1710 ms
+2025-07-15 21:08:44.991 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 1.2969 ms
+2025-07-15 21:08:45.263 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 48.1203 ms
+2025-07-15 21:08:59.557 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 170.2400 ms
+2025-07-15 21:09:00.001 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 83.7068 ms
+2025-07-15 21:11:49.423 -05:00 [INF] Request: POST /api/Profesores
+2025-07-15 21:11:49.604 -05:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-07-15 21:11:49.649 -05:00 [INF] Creando nuevo profesor: {"Nombre":"Profesor Prueba 1","Email":"prueba@prueba.com","Clave":"dilan123","$type":"CrearProfesorDTO"}
+2025-07-15 21:11:50.020 -05:00 [ERR] Error al crear profesor
+Microsoft.Data.SqlClient.SqlException (0x80131904): @Email is not a parameter for procedure sp_TProfesores.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteReaderAsync>b__201_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at EstudiantesApp.Repositorio.RepositorioBase.EjecutarReaderAsync(String storedProcedure, SqlParameter[] parameters) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Repositorio\RepositorioBase.cs:line 38
+   at EstudiantesApp.Repositorio.Repositorios.ProfesorRepositorio.ObtenerPorEmailAsync(String email) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Repositorio\Repositorios\ProfesorRepositorio.cs:line 110
+   at EstudiantesApp.Servicio.Servicios.ProfesorServicio.AdicionarProfesorAsync(ProfesorDTO profesorDTO) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\ProfesorServicio.cs:line 31
+   at EstudiantesApp.API.Controllers.ProfesoresController.AdicionarProfesor(CrearProfesorDTO crearProfesorDTO) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\ProfesoresController.cs:line 74
+ClientConnectionId:5217d42e-f6ab-44aa-96e5-28b75216bd1a
+Error Number:8145,State:1,Class:16
+2025-07-15 21:11:50.152 -05:00 [INF] Response: 500
+2025-07-15 21:11:50.154 -05:00 [ERR] HTTP POST /api/Profesores responded 500 in 1650.7904 ms
+2025-07-15 21:12:07.398 -05:00 [INF] Request: POST /api/Profesores
+2025-07-15 21:12:07.400 -05:00 [INF] Creando nuevo profesor: {"Nombre":"Profesor Prueba 1","Email":"prueba@prueba.com","Clave":"dilan123","$type":"CrearProfesorDTO"}
+2025-07-15 21:12:07.562 -05:00 [INF] Profesor creado con ID 1
+2025-07-15 21:12:07.596 -05:00 [INF] Response: 201
+2025-07-15 21:12:07.597 -05:00 [INF] HTTP POST /api/Profesores responded 201 in 229.3783 ms
+2025-07-15 21:14:37.508 -05:00 [INF] HTTP GET /api/Profesores responded 401 in 72.6098 ms
+2025-07-15 21:31:41.782 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 126.5265 ms
+2025-07-15 21:31:42.278 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 93.7921 ms
+2025-07-15 21:33:25.626 -05:00 [INF] HTTP PUT /api/Profesores/modificarprofesor/1 responded 401 in 122.4700 ms
+2025-07-15 21:34:30.069 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 2.1220 ms
+2025-07-15 21:34:30.356 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 55.6441 ms

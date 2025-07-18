@@ -1,0 +1,1379 @@
+2025-07-17 21:39:07.275 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 239.5740 ms
+2025-07-17 21:39:07.971 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 100.4446 ms
+2025-07-17 21:40:03.731 -05:00 [INF] HTTP GET /api/Estudiantes responded 401 in 234.7231 ms
+2025-07-17 21:54:52.073 -05:00 [INF] HTTP OPTIONS /api/estudiantes responded 204 in 47.4099 ms
+2025-07-17 21:56:05.583 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 3.8443 ms
+2025-07-17 21:56:40.483 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 1.4389 ms
+2025-07-17 22:01:04.356 -05:00 [FTL] Application startup exception
+System.ArgumentNullException: Value cannot be null. (Parameter 'origin')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.GetNormalizedOrigin(String origin)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.WithOrigins(String[] origins)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__7(CorsPolicyBuilder builder) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Program.cs:line 97
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions.AddPolicy(String name, Action`1 configurePolicy)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__3(CorsOptions options) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Program.cs:line 96
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsService..ctor(IOptions`1 options, ILoggerFactory loggerFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-07-17 22:01:04.545 -05:00 [ERR] Hosting failed to start
+System.ArgumentNullException: Value cannot be null. (Parameter 'origin')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.GetNormalizedOrigin(String origin)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.WithOrigins(String[] origins)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__7(CorsPolicyBuilder builder) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Program.cs:line 97
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions.AddPolicy(String name, Action`1 configurePolicy)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__3(CorsOptions options) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Program.cs:line 96
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsService..ctor(IOptions`1 options, ILoggerFactory loggerFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-07-17 22:01:04.695 -05:00 [FTL] Application terminated unexpectedly
+System.ArgumentNullException: Value cannot be null. (Parameter 'origin')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.GetNormalizedOrigin(String origin)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.WithOrigins(String[] origins)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__7(CorsPolicyBuilder builder) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Program.cs:line 97
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions.AddPolicy(String name, Action`1 configurePolicy)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__3(CorsOptions options) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Program.cs:line 96
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsService..ctor(IOptions`1 options, ILoggerFactory loggerFactory)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Program.cs:line 178
+2025-07-17 22:04:20.610 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 126.8996 ms
+2025-07-17 22:04:21.241 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 86.2823 ms
+2025-07-17 22:04:31.654 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 4.4680 ms
+2025-07-17 22:06:58.099 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 120.5505 ms
+2025-07-17 22:06:58.579 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 91.2922 ms
+2025-07-17 22:07:41.018 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 13.9781 ms
+2025-07-17 22:07:46.275 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:07:46.275 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:08:07.550 -05:00 [ERR] Error durante el login para prueba@prueba.com
+System.IndexOutOfRangeException: FechaRegistro
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.ProfesorRepositorio.ObtenerPorEmailAsync(String email) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Repositorio\Repositorios\ProfesorRepositorio.cs:line 114
+   at EstudiantesApp.Servicio.Servicios.AutenticacionServicio.Autenticar(String email, String password) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\AutenticacionServicio.cs:line 47
+   at EstudiantesApp.API.Controllers.AuthController.IniciarSesion(LoginDTO loginDTO) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\AuthController.cs:line 31
+2025-07-17 22:08:07.550 -05:00 [ERR] Error durante el login para prueba@prueba.com
+System.IndexOutOfRangeException: FechaRegistro
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.ProfesorRepositorio.ObtenerPorEmailAsync(String email) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Repositorio\Repositorios\ProfesorRepositorio.cs:line 114
+   at EstudiantesApp.Servicio.Servicios.AutenticacionServicio.Autenticar(String email, String password) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\AutenticacionServicio.cs:line 47
+   at EstudiantesApp.API.Controllers.AuthController.IniciarSesion(LoginDTO loginDTO) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\AuthController.cs:line 31
+2025-07-17 22:08:09.512 -05:00 [INF] Response: 500
+2025-07-17 22:08:09.512 -05:00 [INF] Response: 500
+2025-07-17 22:08:09.515 -05:00 [ERR] HTTP POST /api/auth/iniciarsesion responded 500 in 25508.2375 ms
+2025-07-17 22:08:09.515 -05:00 [ERR] HTTP POST /api/auth/iniciarsesion responded 500 in 28433.0396 ms
+2025-07-17 22:09:27.100 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 27.0126 ms
+2025-07-17 22:09:27.113 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:12:10.445 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 128.6768 ms
+2025-07-17 22:12:10.950 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 85.4803 ms
+2025-07-17 22:12:21.218 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 6.7478 ms
+2025-07-17 22:12:21.754 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:12:27.940 -05:00 [ERR] Error durante el login para prueba@prueba.com
+System.IndexOutOfRangeException: FechaRegistro
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.ProfesorRepositorio.ObtenerPorEmailAsync(String email) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Repositorio\Repositorios\ProfesorRepositorio.cs:line 114
+   at EstudiantesApp.Servicio.Servicios.AutenticacionServicio.Autenticar(String email, String password) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\AutenticacionServicio.cs:line 47
+   at EstudiantesApp.API.Controllers.AuthController.IniciarSesion(LoginDTO loginDTO) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\AuthController.cs:line 31
+2025-07-17 22:12:28.030 -05:00 [INF] Response: 500
+2025-07-17 22:12:28.031 -05:00 [ERR] HTTP POST /api/auth/iniciarsesion responded 500 in 6800.0478 ms
+2025-07-17 22:12:51.863 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 1.1305 ms
+2025-07-17 22:12:53.696 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:13:32.655 -05:00 [ERR] Error durante el login para prueba@prueba.com
+System.ArgumentException: Otro SqlParameterCollection ya contiene SqlParameter.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Validate(Int32 index, Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.AddRange(Array values)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.AddRange(SqlParameter[] values)
+   at EstudiantesApp.Repositorio.RepositorioBase.EjecutarReaderAsync(String storedProcedure, SqlParameter[] parameters)
+   at EstudiantesApp.Repositorio.Repositorios.ProfesorRepositorio.ObtenerPorEmailAsync(String email)
+   at EstudiantesApp.Servicio.Servicios.AutenticacionServicio.Autenticar(String email, String password) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\AutenticacionServicio.cs:line 47
+   at EstudiantesApp.API.Controllers.AuthController.IniciarSesion(LoginDTO loginDTO) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\AuthController.cs:line 31
+2025-07-17 22:13:32.659 -05:00 [INF] Response: 500
+2025-07-17 22:13:32.659 -05:00 [ERR] HTTP POST /api/auth/iniciarsesion responded 500 in 40792.8717 ms
+2025-07-17 22:13:33.581 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 1.6321 ms
+2025-07-17 22:13:34.989 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 59.3222 ms
+2025-07-17 22:13:39.216 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 0.3054 ms
+2025-07-17 22:13:39.228 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:13:42.824 -05:00 [INF] Login exitoso para prueba@prueba.com como Profesor
+2025-07-17 22:13:52.690 -05:00 [INF] Response: 200
+2025-07-17 22:13:52.690 -05:00 [INF] HTTP POST /api/auth/iniciarsesion responded 200 in 13467.9158 ms
+2025-07-17 22:13:53.492 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1127 ms
+2025-07-17 22:13:53.498 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.2498 ms
+2025-07-17 22:13:55.412 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:13:55.663 -05:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-07-17 22:13:55.684 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:13:55.962 -05:00 [INF] Se encontraron 0 materias
+2025-07-17 22:13:55.962 -05:00 [INF] Operación exitosa
+2025-07-17 22:13:55.968 -05:00 [INF] Response: 200
+2025-07-17 22:13:55.968 -05:00 [INF] HTTP GET /api/materias responded 200 in 2453.6034 ms
+2025-07-17 22:13:55.976 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:13:55.977 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:13:56.096 -05:00 [INF] Se encontraron 0 materias
+2025-07-17 22:13:56.096 -05:00 [INF] Operación exitosa
+2025-07-17 22:13:56.097 -05:00 [INF] Response: 200
+2025-07-17 22:13:56.097 -05:00 [INF] HTTP GET /api/materias responded 200 in 126.9784 ms
+2025-07-17 22:14:37.034 -05:00 [INF] HTTP OPTIONS /api/estudiantes responded 204 in 0.2060 ms
+2025-07-17 22:14:37.037 -05:00 [INF] Request: POST /api/estudiantes
+2025-07-17 22:14:37.050 -05:00 [INF] Creando nuevo estudiante con email: prueba2@prueba.com
+2025-07-17 22:14:37.091 -05:00 [INF] Estudiante creado con ID 2
+2025-07-17 22:14:37.109 -05:00 [INF] Response: 201
+2025-07-17 22:14:37.110 -05:00 [INF] HTTP POST /api/estudiantes responded 201 in 72.7362 ms
+2025-07-17 22:14:44.298 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 0.2397 ms
+2025-07-17 22:14:44.301 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:14:45.661 -05:00 [INF] Login exitoso para prueba2@prueba.com como Estudiante
+2025-07-17 22:14:45.662 -05:00 [INF] Response: 200
+2025-07-17 22:14:45.663 -05:00 [INF] HTTP POST /api/auth/iniciarsesion responded 200 in 1362.1844 ms
+2025-07-17 22:14:45.707 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1122 ms
+2025-07-17 22:14:45.708 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0823 ms
+2025-07-17 22:14:45.792 -05:00 [ERR] HTTP GET /api/materias responded 500 in 77.3353 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:14:45.796 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:14:45.858 -05:00 [ERR] HTTP GET /api/materias responded 500 in 53.2394 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:14:45.860 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:14:55.267 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.1954 ms
+2025-07-17 22:14:55.267 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.1974 ms
+2025-07-17 22:14:55.370 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 84.2173 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:14:55.371 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:14:55.445 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 68.2657 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:14:55.446 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:14:57.214 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.2462 ms
+2025-07-17 22:14:57.215 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1714 ms
+2025-07-17 22:14:57.291 -05:00 [ERR] HTTP GET /api/materias responded 500 in 72.8766 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:14:57.292 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:14:57.345 -05:00 [ERR] HTTP GET /api/materias responded 500 in 48.1475 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:14:57.346 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:15:04.619 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 0.1763 ms
+2025-07-17 22:15:04.622 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:15:06.467 -05:00 [INF] Login exitoso para prueba@prueba.com como Profesor
+2025-07-17 22:15:06.468 -05:00 [INF] Response: 200
+2025-07-17 22:15:06.468 -05:00 [INF] HTTP POST /api/auth/iniciarsesion responded 200 in 1846.7046 ms
+2025-07-17 22:15:06.518 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1833 ms
+2025-07-17 22:15:06.518 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0664 ms
+2025-07-17 22:15:06.696 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:15:06.698 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:15:06.888 -05:00 [INF] Se encontraron 0 materias
+2025-07-17 22:15:06.888 -05:00 [INF] Operación exitosa
+2025-07-17 22:15:06.889 -05:00 [INF] Response: 200
+2025-07-17 22:15:06.889 -05:00 [INF] HTTP GET /api/materias responded 200 in 367.8555 ms
+2025-07-17 22:15:06.945 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:15:06.945 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:15:06.955 -05:00 [INF] Se encontraron 0 materias
+2025-07-17 22:15:06.956 -05:00 [INF] Operación exitosa
+2025-07-17 22:15:06.956 -05:00 [INF] Response: 200
+2025-07-17 22:15:06.957 -05:00 [INF] HTTP GET /api/materias responded 200 in 65.4561 ms
+2025-07-17 22:21:05.189 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 28.6370 ms
+2025-07-17 22:21:05.189 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 28.6653 ms
+2025-07-17 22:21:05.224 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:21:05.225 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:21:05.252 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:21:05.253 -05:00 [INF] Operación exitosa
+2025-07-17 22:21:05.254 -05:00 [INF] Response: 200
+2025-07-17 22:21:05.254 -05:00 [INF] HTTP GET /api/materias responded 200 in 58.8967 ms
+2025-07-17 22:21:05.266 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:21:05.268 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:21:05.279 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:21:05.279 -05:00 [INF] Operación exitosa
+2025-07-17 22:21:05.280 -05:00 [INF] Response: 200
+2025-07-17 22:21:05.280 -05:00 [INF] HTTP GET /api/materias responded 200 in 24.1821 ms
+2025-07-17 22:28:15.467 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 2.7700 ms
+2025-07-17 22:28:15.471 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0855 ms
+2025-07-17 22:28:15.519 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:28:15.519 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:28:15.520 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:28:15.520 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:28:15.549 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:28:15.549 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:28:15.551 -05:00 [INF] Operación exitosa
+2025-07-17 22:28:15.551 -05:00 [INF] Operación exitosa
+2025-07-17 22:28:15.561 -05:00 [INF] Response: 200
+2025-07-17 22:28:15.561 -05:00 [INF] Response: 200
+2025-07-17 22:28:15.562 -05:00 [INF] HTTP GET /api/materias responded 200 in 83.4288 ms
+2025-07-17 22:28:15.562 -05:00 [INF] HTTP GET /api/materias responded 200 in 86.3226 ms
+2025-07-17 22:28:16.399 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1333 ms
+2025-07-17 22:28:16.399 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1231 ms
+2025-07-17 22:28:16.486 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:28:16.486 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:28:16.486 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:28:16.486 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:28:16.534 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:28:16.534 -05:00 [INF] Operación exitosa
+2025-07-17 22:28:16.535 -05:00 [INF] Response: 200
+2025-07-17 22:28:16.535 -05:00 [INF] HTTP GET /api/materias responded 200 in 97.8257 ms
+2025-07-17 22:28:16.536 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:28:16.536 -05:00 [INF] Operación exitosa
+2025-07-17 22:28:16.537 -05:00 [INF] Response: 200
+2025-07-17 22:28:16.537 -05:00 [INF] HTTP GET /api/materias responded 200 in 98.3413 ms
+2025-07-17 22:30:59.642 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1935 ms
+2025-07-17 22:30:59.642 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0505 ms
+2025-07-17 22:30:59.709 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:30:59.709 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:30:59.710 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:30:59.710 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:30:59.724 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:30:59.724 -05:00 [INF] Operación exitosa
+2025-07-17 22:30:59.725 -05:00 [INF] Response: 200
+2025-07-17 22:30:59.726 -05:00 [INF] HTTP GET /api/materias responded 200 in 66.1076 ms
+2025-07-17 22:30:59.728 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:30:59.728 -05:00 [INF] Operación exitosa
+2025-07-17 22:30:59.736 -05:00 [INF] Response: 200
+2025-07-17 22:30:59.736 -05:00 [INF] HTTP GET /api/materias responded 200 in 76.8158 ms
+2025-07-17 22:31:00.742 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0919 ms
+2025-07-17 22:31:00.742 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0375 ms
+2025-07-17 22:31:00.766 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:31:00.767 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:31:00.769 -05:00 [INF] Request: GET /api/materias
+2025-07-17 22:31:00.771 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 22:31:00.783 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:31:00.783 -05:00 [INF] Operación exitosa
+2025-07-17 22:31:00.784 -05:00 [INF] Response: 200
+2025-07-17 22:31:00.784 -05:00 [INF] Se encontraron 4 materias
+2025-07-17 22:31:00.784 -05:00 [INF] HTTP GET /api/materias responded 200 in 34.3388 ms
+2025-07-17 22:31:00.784 -05:00 [INF] Operación exitosa
+2025-07-17 22:31:00.785 -05:00 [INF] Response: 200
+2025-07-17 22:31:00.785 -05:00 [INF] HTTP GET /api/materias responded 200 in 33.6882 ms
+2025-07-17 22:36:46.477 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 0.6947 ms
+2025-07-17 22:36:46.543 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:36:46.604 -05:00 [INF] Login exitoso para prueba2@prueba.com como Estudiante
+2025-07-17 22:36:46.605 -05:00 [INF] Response: 200
+2025-07-17 22:36:46.605 -05:00 [INF] HTTP POST /api/auth/iniciarsesion responded 200 in 123.4616 ms
+2025-07-17 22:36:46.656 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1008 ms
+2025-07-17 22:36:46.658 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1193 ms
+2025-07-17 22:36:46.861 -05:00 [ERR] HTTP GET /api/materias responded 500 in 197.4420 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:36:46.883 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:36:46.963 -05:00 [ERR] HTTP GET /api/materias responded 500 in 67.6538 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:36:46.965 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:36:50.260 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.2593 ms
+2025-07-17 22:36:50.258 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.1875 ms
+2025-07-17 22:36:50.353 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 72.0270 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:36:50.354 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:36:50.409 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 50.5530 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:36:50.410 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:37:31.401 -05:00 [INF] HTTP GET /api/Estudiantes/companeros/1 responded 401 in 20.8746 ms
+2025-07-17 22:42:06.052 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 6.4425 ms
+2025-07-17 22:42:06.075 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 29.7455 ms
+2025-07-17 22:42:06.313 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 232.3021 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:42:06.315 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:42:06.382 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 58.5015 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:42:06.383 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:42:32.206 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0781 ms
+2025-07-17 22:42:32.207 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.1332 ms
+2025-07-17 22:42:32.295 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 75.9819 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:42:32.296 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:42:32.349 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 48.3984 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:42:32.350 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:38.250 -05:00 [INF] HTTP OPTIONS /api/auth/iniciarsesion responded 204 in 0.0867 ms
+2025-07-17 22:44:38.253 -05:00 [INF] Request: POST /api/auth/iniciarsesion
+2025-07-17 22:44:38.275 -05:00 [INF] Login exitoso para prueba2@prueba.com como Estudiante
+2025-07-17 22:44:38.277 -05:00 [INF] Response: 200
+2025-07-17 22:44:38.277 -05:00 [INF] HTTP POST /api/auth/iniciarsesion responded 200 in 24.2689 ms
+2025-07-17 22:44:38.308 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.2409 ms
+2025-07-17 22:44:38.308 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0432 ms
+2025-07-17 22:44:38.384 -05:00 [ERR] HTTP GET /api/materias responded 500 in 63.7553 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:38.386 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:38.448 -05:00 [ERR] HTTP GET /api/materias responded 500 in 57.4570 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:38.449 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:39.566 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0730 ms
+2025-07-17 22:44:39.566 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0284 ms
+2025-07-17 22:44:39.648 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 76.8837 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:39.649 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:39.700 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 48.1541 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:39.702 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:42.731 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 70.7149 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:42.732 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:42.782 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 45.9301 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:42.783 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:43.355 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 80.6557 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:43.357 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:43.435 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 73.0094 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:43.439 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:50.056 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0689 ms
+2025-07-17 22:44:50.057 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0286 ms
+2025-07-17 22:44:50.144 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 83.6852 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:50.146 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:44:50.212 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 61.4266 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:44:50.215 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:47:28.106 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0755 ms
+2025-07-17 22:47:28.111 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0518 ms
+2025-07-17 22:47:28.453 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 341.5578 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:47:28.455 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:47:28.560 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 99.7075 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:47:28.561 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:48:44.448 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 1.8410 ms
+2025-07-17 22:48:44.449 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0534 ms
+2025-07-17 22:48:44.549 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 82.4469 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:48:44.550 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:48:44.623 -05:00 [ERR] HTTP GET /api/estudiantes/companeros/2 responded 500 in 67.4918 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:48:44.625 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:49:01.700 -05:00 [INF] HTTP GET /api/Estudiantes/companeros/1 responded 401 in 3.7422 ms
+2025-07-17 22:49:07.710 -05:00 [INF] HTTP GET /api/Estudiantes/companeros/2 responded 401 in 0.3772 ms
+2025-07-17 22:49:26.622 -05:00 [INF] Request: POST /api/Auth/iniciarsesion
+2025-07-17 22:49:26.663 -05:00 [INF] Login exitoso para prueba@prueba.com como Profesor
+2025-07-17 22:49:26.664 -05:00 [INF] Response: 200
+2025-07-17 22:49:26.664 -05:00 [INF] HTTP POST /api/Auth/iniciarsesion responded 200 in 46.2653 ms
+2025-07-17 22:49:45.694 -05:00 [INF] Request: POST /api/Auth/iniciarsesion
+2025-07-17 22:49:45.725 -05:00 [INF] Login exitoso para prueba2@prueba.com como Estudiante
+2025-07-17 22:49:45.725 -05:00 [INF] Response: 200
+2025-07-17 22:49:45.726 -05:00 [INF] HTTP POST /api/Auth/iniciarsesion responded 200 in 31.7830 ms
+2025-07-17 22:50:02.264 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 52.7743 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:50:02.265 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:50:22.489 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 100.0914 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:50:22.490 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:51:49.962 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 77.9040 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:51:49.966 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:51:58.563 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 77.1100 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:51:58.564 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:52:10.505 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 73.7303 ms
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:52:10.506 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: PasswordHash
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:55:00.848 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 26915.6397 ms
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-17 22:55:00.849 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteRepositorio.ObtenerEstudiantePorIdAsync(Int32 id)
+   at EstudiantesApp.API.Middlewares.UsuarioActualMiddleware.Invoke(HttpContext context, IEstudianteRepositorio estudianteRepositorio, IProfesorRepositorio profesorRepositorio) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Middlewares\UsuarioActualMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-17 22:55:25.917 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 21.2570 ms
+2025-07-17 22:55:26.562 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 233.4314 ms
+2025-07-17 22:55:48.766 -05:00 [INF] Request: POST /api/Auth/iniciarsesion
+2025-07-17 22:55:48.840 -05:00 [INF] Login exitoso para prueba2@prueba.com como Estudiante
+2025-07-17 22:55:48.842 -05:00 [INF] Response: 200
+2025-07-17 22:55:48.843 -05:00 [INF] HTTP POST /api/Auth/iniciarsesion responded 200 in 79.0520 ms
+2025-07-17 22:56:01.869 -05:00 [INF] HTTP GET /api/Estudiantes/companeros/2 responded 401 in 3.1501 ms
+2025-07-17 22:56:28.659 -05:00 [INF] Request: GET /api/Estudiantes/companeros/2
+2025-07-17 22:56:32.553 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 22:56:33.364 -05:00 [ERR] Could not find stored procedure 'sp_TEstudiantesMaterias'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'sp_TEstudiantesMaterias'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at EstudiantesApp.Repositorio.RepositorioBase.EjecutarReaderAsync(String storedProcedure, SqlParameter[] parameters)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteMateriaRepositorio.ObtenerMateriasInscritas(Int32 estudianteId)
+   at EstudiantesApp.Servicio.Servicios.EstudianteServicio.ObtenerCompanerosClaseAsync(Int32 estudianteId) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\EstudianteServicio.cs:line 92
+   at EstudiantesApp.API.Controllers.EstudiantesController.ObtenerCompaneros(Int32 id) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\EstudiantesController.cs:line 171
+ClientConnectionId:568cf37c-d756-4281-9206-561f9eac1b04
+Error Number:2812,State:62,Class:16
+2025-07-17 22:56:33.396 -05:00 [INF] Response: 500
+2025-07-17 22:56:33.396 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 10067.6836 ms
+2025-07-17 22:56:55.217 -05:00 [INF] Request: GET /api/Estudiantes/companeros/2
+2025-07-17 22:56:56.243 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 22:56:56.739 -05:00 [ERR] Could not find stored procedure 'sp_TEstudiantesMaterias'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'sp_TEstudiantesMaterias'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at EstudiantesApp.Repositorio.RepositorioBase.EjecutarReaderAsync(String storedProcedure, SqlParameter[] parameters)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteMateriaRepositorio.ObtenerMateriasInscritas(Int32 estudianteId)
+   at EstudiantesApp.Servicio.Servicios.EstudianteServicio.ObtenerCompanerosClaseAsync(Int32 estudianteId) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\EstudianteServicio.cs:line 92
+   at EstudiantesApp.API.Controllers.EstudiantesController.ObtenerCompaneros(Int32 id) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\EstudiantesController.cs:line 171
+ClientConnectionId:568cf37c-d756-4281-9206-561f9eac1b04
+Error Number:2812,State:62,Class:16
+2025-07-17 22:56:56.742 -05:00 [INF] Response: 500
+2025-07-17 22:56:56.742 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 2805.9973 ms
+2025-07-17 22:57:19.062 -05:00 [INF] Request: GET /api/Estudiantes/companeros/2
+2025-07-17 22:57:21.815 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 22:57:25.755 -05:00 [ERR] Could not find stored procedure 'sp_TEstudiantesMaterias'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'sp_TEstudiantesMaterias'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at EstudiantesApp.Repositorio.RepositorioBase.EjecutarReaderAsync(String storedProcedure, SqlParameter[] parameters)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteMateriaRepositorio.ObtenerMateriasInscritas(Int32 estudianteId)
+   at EstudiantesApp.Servicio.Servicios.EstudianteServicio.ObtenerCompanerosClaseAsync(Int32 estudianteId) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\EstudianteServicio.cs:line 92
+   at EstudiantesApp.API.Controllers.EstudiantesController.ObtenerCompaneros(Int32 id) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\EstudiantesController.cs:line 171
+ClientConnectionId:42a96c0e-d68e-4832-888f-cb82a3216645
+Error Number:2812,State:62,Class:16
+2025-07-17 22:57:25.758 -05:00 [INF] Response: 500
+2025-07-17 22:57:25.758 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 8870.8640 ms
+2025-07-17 22:57:37.977 -05:00 [INF] Request: GET /api/Estudiantes/companeros/2
+2025-07-17 22:57:37.978 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 22:58:28.904 -05:00 [ERR] Could not find stored procedure 'sp_TEstudiantesMaterias'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'sp_TEstudiantesMaterias'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at EstudiantesApp.Repositorio.RepositorioBase.EjecutarReaderAsync(String storedProcedure, SqlParameter[] parameters)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteMateriaRepositorio.ObtenerMateriasInscritas(Int32 estudianteId)
+   at EstudiantesApp.Servicio.Servicios.EstudianteServicio.ObtenerCompanerosClaseAsync(Int32 estudianteId) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\EstudianteServicio.cs:line 92
+   at EstudiantesApp.API.Controllers.EstudiantesController.ObtenerCompaneros(Int32 id) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\EstudiantesController.cs:line 171
+ClientConnectionId:568cf37c-d756-4281-9206-561f9eac1b04
+Error Number:2812,State:62,Class:16
+2025-07-17 22:58:28.907 -05:00 [INF] Response: 500
+2025-07-17 22:58:28.907 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 54065.8618 ms
+2025-07-17 22:58:37.531 -05:00 [INF] Request: GET /api/Estudiantes/companeros/2
+2025-07-17 22:58:37.532 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 22:59:21.806 -05:00 [ERR] Could not find stored procedure 'sp_TEstudiantesMaterias'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'sp_TEstudiantesMaterias'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at EstudiantesApp.Repositorio.RepositorioBase.EjecutarReaderAsync(String storedProcedure, SqlParameter[] parameters)
+   at EstudiantesApp.Repositorio.Repositorios.EstudianteMateriaRepositorio.ObtenerMateriasInscritas(Int32 estudianteId)
+   at EstudiantesApp.Servicio.Servicios.EstudianteServicio.ObtenerCompanerosClaseAsync(Int32 estudianteId) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.Servicio\Servicios\EstudianteServicio.cs:line 92
+   at EstudiantesApp.API.Controllers.EstudiantesController.ObtenerCompaneros(Int32 id) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\EstudiantesController.cs:line 171
+ClientConnectionId:42a96c0e-d68e-4832-888f-cb82a3216645
+Error Number:2812,State:62,Class:16
+2025-07-17 22:59:21.809 -05:00 [INF] Response: 500
+2025-07-17 22:59:21.809 -05:00 [ERR] HTTP GET /api/Estudiantes/companeros/2 responded 500 in 44305.3239 ms
+2025-07-17 23:00:04.489 -05:00 [INF] Request: GET /api/Estudiantes/companeros/2
+2025-07-17 23:00:04.492 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:01:03.026 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:01:03.026 -05:00 [INF] Operación exitosa
+2025-07-17 23:01:03.047 -05:00 [INF] Response: 200
+2025-07-17 23:01:03.048 -05:00 [INF] HTTP GET /api/Estudiantes/companeros/2 responded 200 in 58617.2232 ms
+2025-07-17 23:01:21.660 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 1.4449 ms
+2025-07-17 23:01:21.660 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 1.1751 ms
+2025-07-17 23:01:21.702 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:01:21.706 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:01:22.815 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:01:22.817 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:01:23.332 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:01:23.333 -05:00 [INF] Operación exitosa
+2025-07-17 23:01:23.335 -05:00 [INF] Response: 200
+2025-07-17 23:01:23.335 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 1660.1564 ms
+2025-07-17 23:01:23.386 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:01:23.387 -05:00 [INF] Operación exitosa
+2025-07-17 23:01:23.388 -05:00 [INF] Response: 200
+2025-07-17 23:01:23.388 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 1709.9474 ms
+2025-07-17 23:01:39.601 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.1035 ms
+2025-07-17 23:01:39.601 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.1038 ms
+2025-07-17 23:01:39.629 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:01:39.629 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:02:07.563 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:02:07.564 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:04:38.610 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:04:38.610 -05:00 [INF] Operación exitosa
+2025-07-17 23:04:38.611 -05:00 [INF] Response: 200
+2025-07-17 23:04:38.612 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 179002.0387 ms
+2025-07-17 23:04:38.632 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:04:38.632 -05:00 [INF] Operación exitosa
+2025-07-17 23:04:38.632 -05:00 [INF] Response: 200
+2025-07-17 23:04:38.632 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 151098.9277 ms
+2025-07-17 23:05:08.987 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.1476 ms
+2025-07-17 23:05:08.989 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0713 ms
+2025-07-17 23:05:09.047 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:05:09.062 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:05:09.157 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:05:09.157 -05:00 [INF] Operación exitosa
+2025-07-17 23:05:09.164 -05:00 [INF] Response: 200
+2025-07-17 23:05:09.164 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 152.0648 ms
+2025-07-17 23:05:09.177 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:05:09.178 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:05:09.256 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:05:09.256 -05:00 [INF] Operación exitosa
+2025-07-17 23:05:09.256 -05:00 [INF] Response: 200
+2025-07-17 23:05:09.257 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 90.5901 ms
+2025-07-17 23:05:32.221 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1948 ms
+2025-07-17 23:05:32.224 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0669 ms
+2025-07-17 23:05:32.246 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:05:32.262 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:05:32.363 -05:00 [ERR] Activo
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.MateriaRepositorio.ObtenerTodasMaterias()
+   at EstudiantesApp.Servicio.Servicios.MateriaServicio.ObtenerTodasMateriasAsync()
+   at EstudiantesApp.API.Controllers.MateriasController.ObtenerMaterias() in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\MateriasController.cs:line 30
+2025-07-17 23:05:32.369 -05:00 [INF] Response: 500
+2025-07-17 23:05:32.370 -05:00 [ERR] HTTP GET /api/materias responded 500 in 135.2302 ms
+2025-07-17 23:05:32.383 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:05:32.383 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:05:32.465 -05:00 [ERR] Activo
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.MateriaRepositorio.ObtenerTodasMaterias()
+   at EstudiantesApp.Servicio.Servicios.MateriaServicio.ObtenerTodasMateriasAsync()
+   at EstudiantesApp.API.Controllers.MateriasController.ObtenerMaterias() in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\MateriasController.cs:line 30
+2025-07-17 23:05:32.466 -05:00 [INF] Response: 500
+2025-07-17 23:05:32.466 -05:00 [ERR] HTTP GET /api/materias responded 500 in 94.4846 ms
+2025-07-17 23:05:48.527 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1055 ms
+2025-07-17 23:05:48.527 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0355 ms
+2025-07-17 23:05:48.556 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:05:48.557 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:05:48.647 -05:00 [ERR] Activo
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.MateriaRepositorio.ObtenerTodasMaterias()
+   at EstudiantesApp.Servicio.Servicios.MateriaServicio.ObtenerTodasMateriasAsync()
+   at EstudiantesApp.API.Controllers.MateriasController.ObtenerMaterias() in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\MateriasController.cs:line 30
+2025-07-17 23:05:48.648 -05:00 [INF] Response: 500
+2025-07-17 23:05:48.648 -05:00 [ERR] HTTP GET /api/materias responded 500 in 115.4495 ms
+2025-07-17 23:05:48.662 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:05:48.662 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:05:48.788 -05:00 [ERR] Activo
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.MateriaRepositorio.ObtenerTodasMaterias()
+   at EstudiantesApp.Servicio.Servicios.MateriaServicio.ObtenerTodasMateriasAsync()
+   at EstudiantesApp.API.Controllers.MateriasController.ObtenerMaterias() in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\MateriasController.cs:line 30
+2025-07-17 23:05:48.789 -05:00 [INF] Response: 500
+2025-07-17 23:05:48.789 -05:00 [ERR] HTTP GET /api/materias responded 500 in 138.3308 ms
+2025-07-17 23:06:31.743 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 1.1030 ms
+2025-07-17 23:06:31.748 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0492 ms
+2025-07-17 23:06:31.761 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:06:31.762 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:07:27.828 -05:00 [ERR] Activo
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.MateriaRepositorio.ObtenerTodasMaterias()
+   at EstudiantesApp.Servicio.Servicios.MateriaServicio.ObtenerTodasMateriasAsync()
+   at EstudiantesApp.API.Controllers.MateriasController.ObtenerMaterias() in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\MateriasController.cs:line 30
+2025-07-17 23:07:27.839 -05:00 [INF] Response: 500
+2025-07-17 23:07:27.840 -05:00 [ERR] HTTP GET /api/materias responded 500 in 56088.2073 ms
+2025-07-17 23:07:27.856 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:07:27.856 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:07:28.653 -05:00 [ERR] Activo
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.MateriaRepositorio.ObtenerTodasMaterias()
+   at EstudiantesApp.Servicio.Servicios.MateriaServicio.ObtenerTodasMateriasAsync()
+   at EstudiantesApp.API.Controllers.MateriasController.ObtenerMaterias() in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\MateriasController.cs:line 30
+2025-07-17 23:07:28.655 -05:00 [INF] Response: 500
+2025-07-17 23:07:28.655 -05:00 [ERR] HTTP GET /api/materias responded 500 in 816.0473 ms
+2025-07-17 23:07:33.384 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1064 ms
+2025-07-17 23:07:33.385 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0776 ms
+2025-07-17 23:07:33.409 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:07:33.409 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:07:41.547 -05:00 [ERR] Activo
+System.IndexOutOfRangeException: Activo
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at EstudiantesApp.Repositorio.Repositorios.MateriaRepositorio.ObtenerTodasMaterias()
+   at EstudiantesApp.Servicio.Servicios.MateriaServicio.ObtenerTodasMateriasAsync()
+   at EstudiantesApp.API.Controllers.MateriasController.ObtenerMaterias() in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\MateriasController.cs:line 30
+2025-07-17 23:07:41.548 -05:00 [INF] Response: 500
+2025-07-17 23:07:41.548 -05:00 [ERR] HTTP GET /api/materias responded 500 in 8151.0029 ms
+2025-07-17 23:07:41.560 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:07:41.560 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:07:42.649 -05:00 [INF] Se encontraron 20 materias
+2025-07-17 23:07:42.650 -05:00 [INF] Operación exitosa
+2025-07-17 23:07:42.672 -05:00 [INF] Response: 200
+2025-07-17 23:07:42.672 -05:00 [INF] HTTP GET /api/materias responded 200 in 1122.1594 ms
+2025-07-17 23:07:53.815 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.1129 ms
+2025-07-17 23:07:53.816 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0331 ms
+2025-07-17 23:07:53.841 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:07:53.841 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:07:55.680 -05:00 [INF] Se encontraron 20 materias
+2025-07-17 23:07:55.680 -05:00 [INF] Operación exitosa
+2025-07-17 23:07:55.683 -05:00 [INF] Response: 200
+2025-07-17 23:07:55.683 -05:00 [INF] HTTP GET /api/materias responded 200 in 1859.4254 ms
+2025-07-17 23:07:55.691 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:07:55.692 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:07:55.701 -05:00 [INF] Se encontraron 20 materias
+2025-07-17 23:07:55.701 -05:00 [INF] Operación exitosa
+2025-07-17 23:07:55.702 -05:00 [INF] Response: 200
+2025-07-17 23:07:55.702 -05:00 [INF] HTTP GET /api/materias responded 200 in 18.1627 ms
+2025-07-17 23:08:05.770 -05:00 [INF] HTTP OPTIONS /api/estudiantes/inscribir responded 204 in 1.3752 ms
+2025-07-17 23:08:05.782 -05:00 [INF] Request: POST /api/estudiantes/inscribir
+2025-07-17 23:08:05.835 -05:00 [INF] Inscribiendo materia: {"EstudianteId":2,"MateriaId":1,"$type":"InscripcionDTO"}
+2025-07-17 23:08:05.954 -05:00 [WRN] Regla de negocio violada: El estudiante ya tiene el máximo de 3 materias inscritas
+System.InvalidOperationException: El estudiante ya tiene el máximo de 3 materias inscritas
+   at EstudiantesApp.Servicio.Servicios.EstudianteServicio.InscribirMateriaAsync(InscripcionDTO inscripcionDTO)
+   at EstudiantesApp.API.Controllers.EstudiantesController.InscribirMateria(InscripcionDTO inscripcionDTO) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\EstudiantesController.cs:line 144
+2025-07-17 23:08:05.957 -05:00 [INF] Response: 400
+2025-07-17 23:08:05.957 -05:00 [INF] HTTP POST /api/estudiantes/inscribir responded 400 in 184.0810 ms
+2025-07-17 23:08:08.513 -05:00 [INF] Request: POST /api/estudiantes/inscribir
+2025-07-17 23:08:08.515 -05:00 [INF] Inscribiendo materia: {"EstudianteId":2,"MateriaId":1,"$type":"InscripcionDTO"}
+2025-07-17 23:08:08.580 -05:00 [WRN] Regla de negocio violada: El estudiante ya tiene el máximo de 3 materias inscritas
+System.InvalidOperationException: El estudiante ya tiene el máximo de 3 materias inscritas
+   at EstudiantesApp.Servicio.Servicios.EstudianteServicio.InscribirMateriaAsync(InscripcionDTO inscripcionDTO)
+   at EstudiantesApp.API.Controllers.EstudiantesController.InscribirMateria(InscripcionDTO inscripcionDTO) in C:\Users\dilan\OneDrive\Escritorio\EstudiantesApp\EstudiantesApp.API\EstudiantesApp.API\Controllers\EstudiantesController.cs:line 144
+2025-07-17 23:08:08.581 -05:00 [INF] Response: 400
+2025-07-17 23:08:08.581 -05:00 [INF] HTTP POST /api/estudiantes/inscribir responded 400 in 78.1319 ms
+2025-07-17 23:08:12.804 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0559 ms
+2025-07-17 23:08:12.807 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0550 ms
+2025-07-17 23:08:12.825 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:08:12.826 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:08:12.895 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:08:12.895 -05:00 [INF] Operación exitosa
+2025-07-17 23:08:12.896 -05:00 [INF] Response: 200
+2025-07-17 23:08:12.896 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 87.2084 ms
+2025-07-17 23:08:12.909 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:08:12.910 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:08:12.969 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:08:12.970 -05:00 [INF] Operación exitosa
+2025-07-17 23:08:12.970 -05:00 [INF] Response: 200
+2025-07-17 23:08:12.970 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 71.7870 ms
+2025-07-17 23:08:15.659 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0505 ms
+2025-07-17 23:08:15.661 -05:00 [INF] HTTP OPTIONS /api/materias responded 204 in 0.0673 ms
+2025-07-17 23:08:15.683 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:08:15.683 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:08:15.698 -05:00 [INF] Se encontraron 20 materias
+2025-07-17 23:08:15.698 -05:00 [INF] Operación exitosa
+2025-07-17 23:08:15.698 -05:00 [INF] Response: 200
+2025-07-17 23:08:15.699 -05:00 [INF] HTTP GET /api/materias responded 200 in 34.2846 ms
+2025-07-17 23:08:15.711 -05:00 [INF] Request: GET /api/materias
+2025-07-17 23:08:15.711 -05:00 [INF] Obteniendo todas las materias
+2025-07-17 23:08:15.723 -05:00 [INF] Se encontraron 20 materias
+2025-07-17 23:08:15.723 -05:00 [INF] Operación exitosa
+2025-07-17 23:08:15.723 -05:00 [INF] Response: 200
+2025-07-17 23:08:15.724 -05:00 [INF] HTTP GET /api/materias responded 200 in 23.4976 ms
+2025-07-17 23:08:40.595 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0924 ms
+2025-07-17 23:08:40.595 -05:00 [INF] HTTP OPTIONS /api/estudiantes/companeros/2 responded 204 in 0.0454 ms
+2025-07-17 23:08:40.614 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:08:40.641 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:08:40.699 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:08:40.699 -05:00 [INF] Operación exitosa
+2025-07-17 23:08:40.700 -05:00 [INF] Response: 200
+2025-07-17 23:08:40.700 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 101.5826 ms
+2025-07-17 23:08:40.710 -05:00 [INF] Request: GET /api/estudiantes/companeros/2
+2025-07-17 23:08:40.711 -05:00 [INF] Obteniendo compañeros de clase para estudiante ID 2
+2025-07-17 23:08:40.770 -05:00 [INF] Encontrados 4 compañeros para estudiante ID 2
+2025-07-17 23:08:40.770 -05:00 [INF] Operación exitosa
+2025-07-17 23:08:40.771 -05:00 [INF] Response: 200
+2025-07-17 23:08:40.772 -05:00 [INF] HTTP GET /api/estudiantes/companeros/2 responded 200 in 69.9688 ms
