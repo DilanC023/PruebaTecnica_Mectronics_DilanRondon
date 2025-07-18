@@ -46,7 +46,7 @@ PruebaTecnica_Mectronics_DilanRondon/
 ```bash
 git clone [URL Repositorio]
 cd PruebaTecnica_Mectronics_DilanRondon
-
+```
 ### 2. Configura la base de datos
 Abre SQL Server Management Studio.
 
@@ -54,19 +54,20 @@ Ejecuta los scripts en la carpeta EstudiantesApp.BD para crear la base de datos,
 
 
 ### 3. Ejecutar BackEnd
+```
 cd EstudiantesApp.API
 dotnet restore
 dotnet build
 dotnet run
-
+```
 Modificar la cadena de conexion del archivo appsettings.json, por la base de datos local del equipo o instancia SQL Server
 
 ### 4. Ejecutar FronEnd
-
+```
 cd EstudiantesApp.Cliente
 npm install
 npm run dev
-
+```
 
 
 
