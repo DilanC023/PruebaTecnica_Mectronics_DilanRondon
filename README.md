@@ -45,7 +45,7 @@ PruebaTecnica_Mectronics_DilanRondon/
 
 ```bash
 git clone [URL Repositorio]
-cd EstudiantesApp
+cd PruebaTecnica_Mectronics_DilanRondon
 ```
 Modifica el Nombre de la carpeta Base por el nombre de EstudiantesApp
 
